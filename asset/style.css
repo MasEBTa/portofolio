@@ -1,0 +1,204 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+/* Style the header: fixed position (always stay at the top) */
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+.headers {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+#myBar {
+  height: 8px;
+  background: #7a7d7c;
+  width: 0%;
+}
+
+/* jumbotron */
+.jumbotron-style {
+  background: black;
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-image: url("bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.jumbotron-style .space {
+  height: 7rem;
+}
+
+/* title section */
+.title-section {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  /* padding-bottom: 5px; */
+  margin-top: 50px;
+  padding-top: 20px;
+  position: relative;
+  color: #45505b;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.title-section h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #0563bb;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+.title-section h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+/* body section */
+.body-text {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center;
+}
+#about h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #728394;
+}
+/* portofolio */
+#portofolio {
+  padding-top: 50px;
+  background-color: black;
+  color: azure;
+}
+#portofolio .project {
+  max-height: 400px;
+  overflow-y: scroll;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+#portofolio h2 {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0;
+  /* line-height: 1px; */
+  margin: 0 0 20px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+#portofolio h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #e5eee9;
+  margin: 4px 10px;
+}
+#portofolio .icon-box {
+  border: none;
+  color: #aaaaaa;
+  text-align: center;
+  background: rgba(204, 204, 204, 0.1);
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+}
+#portofolio .icon-box:hover {
+  background: rgba(135, 135, 242, 0.372);
+}
+#portofolio .body-text {
+  text-align: justify;
+}
+#portofolio .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #619ae5;
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transform-style: preserve-3d;
+}
+#portofolio .icon::before {
+  position: absolute;
+  content: "";
+  left: -8px;
+  top: -8px;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  transform: translateZ(-1px);
+}
+#portofolio .icon i {
+  color: #fff;
+  font-size: 28px;
+}
+#portofolio .bi {
+  font-family: boxicons!important;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  display: inline-block;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
