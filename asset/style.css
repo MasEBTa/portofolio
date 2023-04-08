@@ -175,6 +175,8 @@ header {
 }
 .portofolio1 .body-text, .portofolio2 .body-text, .portofolio3 .body-text {
   text-align: justify;
+  text-justify: distribute;
+  text-align-last: left;
 }
 .portofolio1 .icon, .portofolio2 .icon, .portofolio3 .icon {
   margin: 0 auto;

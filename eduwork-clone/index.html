@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bookself App</title>
     <!-- style -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="asset/style.css">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
@@ -16,68 +16,60 @@
        <a class="active nav_link" data-id="overview" href="#overview">Overview</a>
        <a class="nav_link" data-id="about" href="#about">Tentang</a>
        <a class="nav_link" href="#background" data-id="background">Latar Belakang</a>
-       <a class="nav_link" href="http://msebta.rf.gd/ig-copy/" data-id="demo" target="_blank">Demo</a>
-       <a class="nav_link" href="https://github.com/MasEBTa/login_instagram_clone.git" data-id="github" target="_blank">Github</a>
+       <a class="nav_link" href="https://masebta.github.io/eduwork-clone/" data-id="demo" target="_blank">Demo</a>
+       <a class="nav_link" href="https://github.com/MasEBTa/eduwork-clone.git" data-id="github" target="_blank">Github</a>
     </div>
     
     <!-- Page content -->
-    <div class="content" id="overview pb-5">
-        <img src="igc.png" alt="">
+    <div class="content  pb-5" id="overview">
+        <img src="asset/img/edu.png" alt="">
     </div>
-    <div class="content d-none" id="about">
-        <div class="container title-text pt-3 pb-5">
-            <h1 class="text-center fs-4">Instagram Login Page Clone</h1>
+    <div class="content  pb-5 d-none" id="about">
+        <div class="container title-text pt-3">
+            <h1 class="text-center fs-4">Eduwork Landing Page Clone</h1>
         </div>
         <div class="container body-text">
-            Ide dasar proyek ini adalah cloning dari halaman login <a href="https://www.instagram.com/">Instagram Website</a>.
+            Ide dasar proyek ini adalah cloning dari halaman landing Page <a href="https://eduwork.id/">eduwork.id</a>.
             <h2 class="fs-5 mt-4">Detail Aplikasi</h2>
-            <ol>
-                <li>Hanya 1 halaman. Saya buat semirip mungkin dengan halaman login Instagram.</li>
-                <li>Menampilkan slider gambar (<em>Carousel</em>) di sebelah kiri yang bergantian 3 gambar setiap 2 detik (2000ms)</li>
-                    <ul>
-                        <li>Screen Shoot Chat</li>
-                        <li>Screen Shoot Story Instagram</li>
-                        <li>Screen Shoot Home Page</li>
-                    </ul>
-                <li>Menampilkan hover label pada input (username/password) ketika mengetikkan suatu karakter.</li>
-                <li>Fitur hide/show pada input password.</li>
+            <ol>Hanya 1 halaman. yang terdiri dari :
+                <li>Header</li>
+                <li>Jumbotron</li>
+                <li>Card feature.</li>
                 <li>Responsive/mobile friendly.</li>
             </ol>
             <h2 class="fs-5 mt-4">Teknologi</h2>
-            Saya membuat halaman ini menggunakan Html, Css, Javascript.
+            Saya membuat halaman ini menggunakan Html, Css, Bootstrap.
         </div>
     </div>
-    <div class="content d-none" id="background">
-        <div class="container title-text pt-3 pb-5">
+    <div class="content  pb-5 d-none" id="background">
+        <div class="container title-text pt-3">
             <h1 class="text-center fs-4">Latar Belakang Pembuatan</h1>
         </div>
         <div class="container body-text">
-            Halaman website ini saya buat untuk mengukur kemampuan saya pada Pembuatan
-            design website. Ada beberapa hal baru yang saya pelajari pada pembuatan halaman
-            ini seperti :
-            <ul>
-                <li>Pembuatan <em>Carousel</em> dan penggunaan <em>setTimeout</em> pada Javascript.</li>
-                <li>Pemahaman penggunaan <em>Flex</em> pada css yang sangat powerfull untuk design tampilan website.</li>
-                <li>Pengaturan tata letak pada sebuah halaman website.</li>
-            </ul>
+            <p>Halaman website ini saya buat sebagai salah satu tugas dari kelas laravelXvue
+            yang disediakan oleh <a href="eduwork.id">Eduwork</a>. Tujuan dari tugas ini
+            adalah mengukur kemampuan dalam pembuatan tampilan website menggunakan bootstrap
+            sebagai framework CSS, HTML, dan JavaScript untuk mempermudah pembuatan website
+            responsif dan mobile-friendly.</p>
+            <img class="mt-2" src="asset/img/task.png" alt="">
         </div>
     </div>
-    <div class="content d-none" id="demo">
-        <div class="container title-text pt-3 pb-5">
+    <div class="content  pb-5 d-none" id="demo">
+        <div class="container title-text pt-3">
             <h1 class="text-center fs-4">Demo Aplikasi</h1>
         </div>
         <div class="container body-text">
-           Clone halaman login dari instagram ini dapat dilihat demonya pada halaman
-           <a href="http://msebta.rf.gd/ig-copy/" target="_blank">http://msebta.rf.gd/ig-copy/</a>.
+            cloning halaman landing Page <a href="https://eduwork.id/">eduwork.id</a> ini dapat dilihat demonya pada halaman
+           <a href="https://masebta.github.io/eduwork-clone/" target="_blank">https://masebta.github.io/eduwork-clone/</a>.
         </div>
     </div>
-    <div class="content d-none" id="github">
-        <div class="container title-text pt-3 pb-5">
+    <div class="content  pb-5 d-none" id="github">
+        <div class="container title-text pt-3">
             <h1 class="text-center fs-4">Laman GitHub</h1>
         </div>
         <div class="container body-text">
-            Untuk melihat halaman github dari Clone halaman login Instagram ini silahkan kunjungi
-            halaman <a href="https://github.com/MasEBTa/login_instagram_clone.git" target="_blank">https://github.com/MasEBTa/login_instagram_clone.git</a>.
+            Untuk melihat halaman github dari cloning halaman landing Page <a href="https://eduwork.id/">eduwork.id</a> ini silahkan kunjungi
+            halaman <a href="https://github.com/MasEBTa/eduwork-clone.git" target="_blank">https://github.com/MasEBTa/eduwork-clone.git</a>.
             Saya tidak membatasi penggunaan <em>source code</em> ini. Apabila anda atau siapapun hendak menggunakannya
             sebagai sumber belajar atau proyek pribadi saya persilahkan. <strong>Setiap tanggung jawab yang timbul atas penggunaan
             <em>source code</em> halaman ini merupakan tanggung jawab pribadi pengguna dan tidak ada sangkut paut dengan
@@ -86,7 +78,7 @@
     </div>
 
     <!-- script -->
-    <script src="script.js"></script>
+    <script src="asset/script.js"></script>
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <!-- bootsrap -->

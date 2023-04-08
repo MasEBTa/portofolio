@@ -86,4 +86,6 @@
 
   .body-text {
     text-align: justify;
+    text-justify: distribute;
+    text-align-last: left;
   }
