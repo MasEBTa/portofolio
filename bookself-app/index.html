@@ -13,19 +13,75 @@
 <body id="body-pd">
     <!-- The sidebar -->
     <div class="sidebar">
-       <a class="active" href="#pic">Overview</a>
-       <a href="#about">News</a>
-       <a href="#contact">Contact</a>
-       <a href="#about">About</a>
+       <a class="active nav_link" data-id="overview" href="#overview">Overview</a>
+       <a class="nav_link" data-id="about" href="#about">Tentang</a>
+       <a class="nav_link" href="#background" data-id="background">Latar Belakang</a>
+       <a class="nav_link" href="https://masebta.github.io/bookshelf_app/" data-id="demo" target="_blank">Demo</a>
+       <a class="nav_link" href="https://github.com/MasEBTa/bookshelf_app" data-id="demo" target="_blank">Github</a>
     </div>
     
     <!-- Page content -->
-    <div class="content">
+    <div class="content" id="overview">
         <img src="bsa.png" alt="">
+    </div>
+    <div class="content d-none" id="about">
+        <div class="container title-text pt-3">
+            <h1 class="text-center fs-4">Aplikasi Pengelolaan Data Menggunakan DOM dan Web Storage</h1>
+        </div>
+        <div class="container body-text">
+            Aplikasi web yang dapat memasukan data buku ke dalam rak, memindahkan data
+            buku antar rak, dan menghapus data buku dari rak. Ide dari aplikasi ini yakin
+            sebagai pencatat data buku yang kita baca. Jika sudah seledai di baca bisa kita
+            tandai sebagai sudah dibaca.
+            <h2 class="fs-5 mt-4">Detail Aplikasi</h2>
+            <ol>
+                <li>Bookshelf Apps memiliki 2 Rak buku. Yakni, “Belum selesai dibaca” dan “Selesai dibaca”.</li>
+                <li>Buku yang ditampilkan pada rak, baik itu "Belum selesai dibaca" maupun "Selesai dibaca" dapat dipindahkan di antara keduanya.</li>
+                <li>Buku yang ditampilkan pada rak, baik itu "Belum selesai dibaca" maupun "Selesai dibaca" dapat dihapus.</li>
+                <li>Data buku yang ditampilkan pada rak, baik itu "Belum selesai dibaca" maupun "Selesai dibaca" dapat bertahan walaupun halaman web ditutup
+                    karena data buku disimpan pada localStorage.</li>
+            </ol>
+            <h2 class="fs-5 mt-4">Teknologi</h2>
+            Aplikasi ini dibuat menggunakan Html, Css, Javascript, dan memanfaatkan Lokal Storage
+        </div>
+    </div>
+    <div class="content d-none" id="background">
+        <div class="container title-text pt-3">
+            <h1 class="text-center fs-4">Latar Belakang Pembuatan</h1>
+        </div>
+        <div class="container body-text">
+            Aplikasi Bookshelf Web ini saya buat ketika mempelajari kelas <a href="https://www.dicoding.com/academies/315">
+            Belajar Membuat Front-End Web untuk Pemula</a> yang disediakan oleh <a href="https://www.dicoding.com/">Dicoding</a>.
+            sebagai persyaratan untuk lulus dalam kelas tersebut.
+
+            Dengan membuat aplikasi ini saya menjadi lebih memahami tentang penggunaan
+            <em>Local Storage</em> dan <em>Session Storage</em> dalam implementasinya
+            untuk sebuah website.
+        </div>
+    </div>
+    <div class="content d-none" id="demo">
+        <div class="container title-text pt-3">
+            <h1 class="text-center fs-4">Demo Aplikasi</h1>
+        </div>
+        <div class="container body-text">
+            Aplikasi Bookself App berbasis website ini saya host pada github pages untuk melihat demo aplikasi ini
+            Silahkan kunjungi halaman <a href="https://masebta.github.io/bookshelf_app/" target="_blank">https://masebta.github.io/bookshelf_app/</a>.
+        </div>
+    </div>
+    <div class="content d-none" id="github">
+        <div class="container title-text pt-3">
+            <h1 class="text-center fs-4">Laman GitHub</h1>
+        </div>
+        <div class="container body-text">
+            Untuk melihat halaman github dari aplikasi Bookself App ini silahkan kunjungi
+            halaman <a href="https://github.com/MasEBTa/bookshelf_app" target="_blank">https://github.com/MasEBTa/bookshelf_app</a>.
+            Saya tidak membatasa penggunaan <em>source code</em> ini. Apabila anda atau siapapun hendak menggunakannya
+            sebagai sumber belajar atau proyek pribadi saya persilahkan.
+        </div>
     </div>
 
     <!-- script -->
-    <script src="asset/script.js"></script>
+    <script src="script.js"></script>
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <!-- bootsrap -->

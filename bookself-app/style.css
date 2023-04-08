@@ -83,3 +83,7 @@
     margin-top: 0.5%;
     margin-bottom: 0.5%;
   }
+
+  .body-text {
+    text-align: justify;
+  }

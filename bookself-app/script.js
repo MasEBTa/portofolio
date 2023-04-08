@@ -24,15 +24,30 @@ document.addEventListener("DOMContentLoaded", function(event) {
     showNavbar('header-toggle','nav-bar','body-pd','header')
     
     /*===== LINK ACTIVE =====*/
-    const linkColor = document.querySelectorAll('.nav_link')
+    const linkColor = document.querySelectorAll('.nav_link');
     
     function colorLink(){
         if(linkColor){
-            linkColor.forEach(l=> l.classList.remove('active'))
-            this.classList.add('active')
+            linkColor.forEach(l=> l.classList.remove('active'));
+            this.classList.add('active');
+            swipet(this.getAttribute("data-id"));
         }
     }
     linkColor.forEach(l=> l.addEventListener('click', colorLink))
+
+    // move document
+    function swipet(id) {
+        let content = document.querySelectorAll('.content');
+        content.forEach(element => {
+            if (element.getAttribute('id') == id) {
+                element.classList.remove('d-none');
+                element.classList.add('d-block');
+            } else {
+                element.classList.remove('d-block');
+                element.classList.add('d-none');
+            }
+        });
+    }
     
-     // Your code to run since DOM is loaded and ready
+    // Your code to run since DOM is loaded and ready
 });

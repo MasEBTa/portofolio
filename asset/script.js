@@ -1,11 +1,9 @@
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {
     myFunction();
-    // console.log('loh');
 };
 
 function myFunction() {
-console.log('halo');
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
@@ -19,12 +17,24 @@ console.log('halo');
       document.getElementById("header").classList.remove("d-none");
   }
   document.getElementById("myBar").style.width = scrolled + "%";
-  console.log(scrolled);
 }
 
 // jquery code
+function openModal() {
+  $('#modal').modal('toggle');
+}
 function bookself() {
-    $('#modal').modal('toggle');
-    $('.modal-title').text('Bookself App');
-    $('object').attr('data', 'bookself-app/index.html');
+  openModal();
+  $('.modal-title').text('Bookself App');
+  $('#object-modal').attr('data', 'bookself-app/index.html');
+}
+function igClone() {
+  openModal();
+  $('.modal-title').text('Instagram Login Page Clone');
+  $('object').attr('data', 'ig-clone/index.html');
+}
+function eduworkClone() {
+  openModal();
+  $('.modal-title').text('Eduwork Landing Page Clone');
+  $('object').attr('data', 'eduwork-clone/index.html');
 }
