@@ -38,3 +38,13 @@ function eduworkClone() {
   $('.modal-title').text('Eduwork Landing Page Clone');
   $('object').attr('data', 'eduwork-clone/index.html');
 }
+function semantik() {
+  openModal();
+  $('.modal-title').text('Analisa Semantik HTML');
+  $('object').attr('data', 'semantik-html/index.html');
+}
+function logicTest() {
+  openModal();
+  $('.modal-title').text('Analisa Semantik HTML');
+  $('object').attr('data', 'test-logic/index.html');
+}
