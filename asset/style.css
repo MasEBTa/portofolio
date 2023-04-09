@@ -56,14 +56,19 @@ header {
   background: black;
   height: 100%;
   /* Create the parallax scrolling effect */
-  background-image: url("img/bg.jpg");
+  background-image: url("img/bg3.jpg");
   background-attachment: fixed;
-  background-position: center;
+  background-position:right bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .jumbotron-style .space {
   height: 7rem;
+}
+.jumbotron-style img {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
 /* title section */
@@ -170,6 +175,8 @@ header {
 }
 .portofolio1 .body-text, .portofolio2 .body-text, .portofolio3 .body-text {
   text-align: justify;
+  text-justify: distribute;
+  text-align-last: left;
 }
 .portofolio1 .icon, .portofolio2 .icon, .portofolio3 .icon {
   margin: 0 auto;
