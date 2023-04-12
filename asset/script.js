@@ -20,6 +20,7 @@ function myFunction() {
 }
 
 // jquery code
+// $('.tooltip').tooltip();
 function openModal() {
   $('#modal').modal('toggle');
 }

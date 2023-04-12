@@ -26,8 +26,7 @@
         <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
         <li class="nav-item"><a href="#about" class="nav-link">Tentang</a></li>
         <li class="nav-item"><a href="#portofolio" class="nav-link">Portfolio</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Kontak</button></li>
       </ul>
     </header>
 
@@ -44,7 +43,7 @@
       <!-- <hr class="my-4"> -->
       <!-- <p text-white>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
       <a class="btn btn-primary btn-lg" href="#about" role="button">Learn more</a>
-      <a class="btn btn-light btn-lg" href="#about" role="button">Hire Me</a>
+      <a class="btn btn-light btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Hire Me</a>
     </div>
 
     <!-- about section -->
@@ -67,53 +66,38 @@
             <em>web-developer</em> seperti <strong>Css, Html, Javascript, Vue Js, React js,
             PHP, dan Framework Laravel.</strong>
           </p>
-          <!-- <div class="row">
-            <div class="col-lg-6">
-              <ul type="none">
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone :</strong> <span>+62 851 5800 4789</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Domisili :</strong> <span>Surakarta, Indonesia</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Pendidikan :</strong> <span>SMK</span></li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul type="none">
-                <li><i class="bi bi-chevron-right"></i> <strong>Email :</strong> <span>ebta.sb@gmail.com</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Linkedin :</strong> <span>ebta.sb@gmail.com</span></li>
-              </ul>
-            </div>
-          </div> -->
           <h3>Skills :</h3>
           <div class="row">
-            <div class="col-md-4">
-              <span class="skill" onclick="frontendSkill()">Basic Front End</span>
+            <div class="col-md-3">
+              <span class="skill" onclick="frontendSkill()" data-toggle="tooltip" class="tooltip">Basic Front End</span>
               <ul type="none">
-                <li class="row" onclick="htmlSkill()"><button class="col-md-5 d-inline-block">Html</button></li>
-                <li class="row" onclick="cssSkill()"><button class="col-md-5 d-inline-block">Css</button></li>
-                <li class="row" onclick="jsSkill()"><button class="col-md-5 d-inline-block">Javascript</button></li>
-                <li class="row" onclick="bootstrapSkill()"><button class="col-md-5 d-inline-block">Bootstrap</button></li>
+                <li class="row" onclick="htmlSkill()"><a href="#" class="skillset col-md-5 d-inline-block">Html</a></li>
+                <li class="row" onclick="cssSkill()"><a href="#" class="skillset col-md-5 d-inline-block">Css</a></li>
+                <li class="row" onclick="jsSkill()"><a href="#" class="skillset col-md-5 d-inline-block">Javascript</a></li>
+                <li class="row" onclick="bootstrapSkill()"><a href="#" class="skillset col-md-5 d-inline-block">Bootstrap</a></li>
               </ul>
             </div>
             <div class="col-md-3">
               <span class="skill">Php Base</span>
               <ul type="none">
-                <li class="row" onclick="phpSkill()"><span class="col-md-5 d-inline-block">Php</span></li>
-                <li class="row" onclick="laravelSkill()"><span class="col-md-5 d-inline-block">Laravel</span></li>
+                <li class="row" onclick="phpSkill()"><a href="#" class="skillset col-md-5 d-inline-block">Php</a></li>
+                <li class="row" onclick="laravelSkill()"><a href="#" class="skillset col-md-5 d-inline-block">Laravel</a></li>
               </ul>
               <span class="skill">Javascript Base</span>
               <ul type="none">
-                <li class="row" onclick="jquerySkill()"><span class="col-md-5 d-inline-block">Jquery</span></li>
-                <li class="row" onclick="vueSkill()"><span class="col-md-5 d-inline-block">VueJs</span></li>
-                <li class="row"><span class="col-md-5 d-inline-block">ReactJs</span></li>
-                <li class="row"><span class="col-md-5 d-inline-block">NodeJs</span></li>
+                <li class="row" onclick="jquerySkill()"><a href="#" class="skillset col-md-5 d-inline-block">Jquery</a></li>
+                <li class="row" onclick="vueSkill()"><a href="#" class="skillset col-md-5 d-inline-block">VueJs</a></li>
+                <li class="row"><span class="skillset col-md-5 d-inline-block">ReactJs</span></li>
+                <li class="row"><span class="skillset col-md-5 d-inline-block">NodeJs</span></li>
               </ul>
             </div>
             <div class="col-md-3">
               <span class="skill">Other</span>
               <ul type="none">
-                <li class="row" onclick="githubSkill()"><span class="col-md-5 d-inline-block">Git&Github</span></li>
-                <li class="row" onclick="sqlSkill()"><span class="col-md-5 d-inline-block">Sql</span></li>
-                <li class="row"><span class="col-md-5 d-inline-block">MySql</span></li>
-                <li class="row"><span class="col-md-5 d-inline-block">Ajax</span></li>
+                <li class="row" onclick="githubSkill()"><a href="#" class="skillset col-md-5 d-inline-block">Git&Github</a></li>
+                <li class="row" onclick="sqlSkill()"><a href="#" class="skillset col-md-5 d-inline-block">Sql</a></li>
+                <li class="row"><span class="skillset col-md-5 d-inline-block">MySql</span></li>
+                <li class="row"><span class="skillset col-md-5 d-inline-block">Ajax</span></li>
               </ul>
             </div>
           </div>
@@ -291,6 +275,29 @@
               Alternative Content
           </object>
         </div>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Contact Me on :</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <table>
+          <tbody>
+            <tr>
+              <td>Email </td><td>:</td><td><a class="contact" href="mailto:ebta.sb@gmail.com">ebta.sb@gmail.com</a></td>
+            </tr>
+            <tr>
+              <td>Phone </td><td>:</td><td>+62851-5800-4789</td>
+            </tr>
+            <tr>
+              <td>LinkInd </td><td>:</td><td><a class="contact" href="https://www.linkedin.com/in/muhammad-sholikhul-ebta-403060254">Muhammad Sholikhul Ebta</a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 
