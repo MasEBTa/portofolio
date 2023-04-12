@@ -120,6 +120,15 @@ header {
     font-size: 26px;
     color: #728394;
 }
+#about .skill {
+  font-weight: 500;
+  font-size: 18px;
+  color: #728394;
+}
+li button {
+  border: none;
+  background-color: white;
+}
 /* portofolio */
 .portofolio1 {
   padding-top: 50px;
@@ -128,7 +137,7 @@ header {
 }
 .portofolio2 {
   padding-top: 50px;
-  background-color: rgb(21, 21, 21);
+  background-color: rgb(251, 251, 251);
   color: azure;
 }
 .portofolio3 {
@@ -143,7 +152,7 @@ header {
   padding-bottom: 30px;
 
 }
-.portofolio1 h2, .portofolio2 h2, .portofolio3 h2 {
+.portofolio1 h2, .portofolio3 h2 {
   font-size: 20px;
   font-weight: 500;
   padding: 0;
@@ -154,7 +163,7 @@ header {
   color: #aaaaaa;
   font-family: "Poppins", sans-serif;
 }
-.portofolio1 h2::after, .portofolio2 h2::after, .portofolio3 h2::after {
+.portofolio1 h2::after, .portofolio3 h2::after {
   content: "";
   width: 120px;
   height: 1px;
@@ -162,7 +171,17 @@ header {
   background: #e5eee9;
   margin: 4px 10px;
 }
-.portofolio1 .icon-box, .portofolio2 .icon-box, .portofolio3 .icon-box {
+.portofolio2 .body-text {
+  color: black;
+}
+.portofolio2 .sub-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'IBM Plex Serif', serif;
+  color: black;
+}
+.portofolio1 .icon-box, .portofolio3 .icon-box {
   border: none;
   color: #aaaaaa;
   text-align: center;
@@ -170,8 +189,19 @@ header {
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
 }
-.portofolio1 .icon-box:hover, .portofolio2 .icon-box:hover, .portofolio3 .icon-box:hover {
+.portofolio2 .icon-box {
+  border: none;
+  color: #292424;
+  text-align: center;
+  background: rgba(7, 7, 7, 0.1);
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+}
+.portofolio1 .icon-box:hover, .portofolio3 .icon-box:hover {
   background: rgba(135, 135, 242, 0.372);
+}
+.portofolio2 .icon-box:hover {
+  background: rgba(21, 21, 22, 0.372);
 }
 .portofolio1 .body-text, .portofolio2 .body-text, .portofolio3 .body-text {
   text-align: justify;
@@ -219,12 +249,12 @@ header {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.portofolio1 .sub-title, .portofolio2 .sub-title, .portofolio3 .sub-title {
+.portofolio1 .sub-title, .portofolio3 .sub-title {
   margin: 0;
   margin: 0;
   font-size: 20px;
   font-weight: 700;
-  font-family: 'IBM Plex Serif', serif;;
+  font-family: 'IBM Plex Serif', serif;
   color: #fff;
 }
 /* modal */
