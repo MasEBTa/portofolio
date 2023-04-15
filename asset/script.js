@@ -18,9 +18,17 @@ function myFunction() {
   }
   document.getElementById("myBar").style.width = scrolled + "%";
 }
-
+// skill
+const skill = document.querySelectorAll('.skill');
+skill.forEach(element => {
+  element.addEventListener('mouseover', (function () {
+    this.children[1].style.display = "block";
+  }));
+  element.addEventListener('mouseout', (function () {
+    this.children[1].style.display = "none";
+  }));
+});
 // jquery code
-// $('.tooltip').tooltip();
 function openModal() {
   $('#modal').modal('toggle');
 }

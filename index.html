@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,600&display=swap" rel="stylesheet">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 
   <body>
@@ -54,10 +56,10 @@
       </div>
       <!-- body about -->
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-2 cover-img-about">
           <img src="asset/img/me.jpg" class="img-fluid" alt="">
         </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content">
+        <div class="col-lg-10 img-about pt-4 pt-lg-0 content">
           <h3>Web Developer</h3>
           <p>
             Saya cukup antusias dalam bidang pengembangan website dan aplikasi. Hal itu 
@@ -66,45 +68,91 @@
             <em>web-developer</em> seperti <strong>Css, Html, Javascript, Vue Js, React js,
             PHP, dan Framework Laravel.</strong>
           </p>
-          <h3>Skills :</h3>
-          <div class="row">
-            <div class="col-md-3">
-              <span class="skill" onclick="frontendSkill()" data-toggle="tooltip" class="tooltip">Basic Front End</span>
-              <ul type="none">
-                <li class="row" onclick="htmlSkill()"><a href="#" class="skillset col-md-5 d-inline-block">Html</a></li>
-                <li class="row" onclick="cssSkill()"><a href="#" class="skillset col-md-5 d-inline-block">Css</a></li>
-                <li class="row" onclick="jsSkill()"><a href="#" class="skillset col-md-5 d-inline-block">Javascript</a></li>
-                <li class="row" onclick="bootstrapSkill()"><a href="#" class="skillset col-md-5 d-inline-block">Bootstrap</a></li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <span class="skill">Php Base</span>
-              <ul type="none">
-                <li class="row" onclick="phpSkill()"><a href="#" class="skillset col-md-5 d-inline-block">Php</a></li>
-                <li class="row" onclick="laravelSkill()"><a href="#" class="skillset col-md-5 d-inline-block">Laravel</a></li>
-              </ul>
-              <span class="skill">Javascript Base</span>
-              <ul type="none">
-                <li class="row" onclick="jquerySkill()"><a href="#" class="skillset col-md-5 d-inline-block">Jquery</a></li>
-                <li class="row" onclick="vueSkill()"><a href="#" class="skillset col-md-5 d-inline-block">VueJs</a></li>
-                <li class="row"><span class="skillset col-md-5 d-inline-block">ReactJs</span></li>
-                <li class="row"><span class="skillset col-md-5 d-inline-block">NodeJs</span></li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <span class="skill">Other</span>
-              <ul type="none">
-                <li class="row" onclick="githubSkill()"><a href="#" class="skillset col-md-5 d-inline-block">Git&Github</a></li>
-                <li class="row" onclick="sqlSkill()"><a href="#" class="skillset col-md-5 d-inline-block">Sql</a></li>
-                <li class="row"><span class="skillset col-md-5 d-inline-block">MySql</span></li>
-                <li class="row"><span class="skillset col-md-5 d-inline-block">Ajax</span></li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
     </div>
 
+    <div id="skills">
+     <div class="container mb-5">
+      <!-- pendahuluan -->
+      <div class="section-title pt-3">
+        <h2>Skill</h2>
+      </div>
+      <!-- body skills -->
+      <div class="row pb-4">
+        <div class="col-lg-6">
+          <div class="pt-4 pt-lg-0 content" onclick="frontendSkill()">
+            <h3>Basic Front End</h3>
+          </div>
+          <div class="scrollskill">
+            <div type="button" class="skill" onclick="htmlSkill()">
+              <i class="fa-brands fa-html5"></i>
+              <p>HTML<br><small><sup>(click me)</sup></small></p>
+            </div>
+            <div type="button" class="skill" onclick="cssSkill()">
+              <i class="fa-brands fa-css3-alt"></i>
+              <p>CSS<br><small><sup>(click me)</sup></small></p>
+            </div>
+            <div type="button" class="skill" onclick="jsSkill()">
+              <i class="fa-brands fa-square-js"></i>
+              <p>Javascript<br><small><sup>(click me)</sup></small></p>
+            </div>
+            <div type="button" class="skill" onclick="bootstrapSkill()">
+              <i class="fa-brands fa-bootstrap"></i>
+              <p>Bootstrap<br><small><sup>(click me)</sup></small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="pt-4 pt-lg-0 content">
+            <h3>Php Base</h3>
+          </div>
+          <div class="scrollskill">
+            <div type="button" class="skill" onclick="phpSkill()">
+              <i class="fa-brands fa-php"></i>
+              <p>Php<br><small><sup>(click me)</sup></small></p>
+            </div>
+            <div type="button" class="skill" onclick="laravelSkill()">
+              <i class="fa-brands fa-laravel"></i>
+              <p>Laravel<br><small><sup>(click me)</sup></small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="pt-4 pt-lg-0 content">
+            <h3>Javascript Base</h3>
+          </div>
+          <div class="scrollskill">
+            <div type="button" class="skill" onclick="jquerySkill()">
+              <span>jQuery</span>
+              <p>jQuery<br><small><sup>(click me)</sup></small></p>
+            </div>
+            <div type="button" class="skill" onclick="vueSkill()">
+              <i class="fa-brands fa-vuejs"></i>
+              <p>Vue Js<br><small><sup>(click me)</sup></small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="pt-4 pt-lg-0 content">
+            <h3>Other</h3>
+          </div>
+          <div class="scrollskill">
+            <div type="button" class="skill" onclick="githubSkill()">
+              <i class="fa-brands fa-github"></i>
+              <p>Git/Github<br><small><sup>(click me)</sup></small></p>
+            </div>
+            <div type="button" class="skill" onclick="sqlSkill()">
+              <i class="fa-solid fa-database"></i>
+              <p>Sql<br><small><sup>(click me)</sup></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+
+ 
     <!-- html, css, js, bootstrap project -->
     <div class="portofolio1 pb-5" id="portofolio">
       <div class="container">
@@ -300,7 +348,7 @@
         </table>
       </div>
     </div>
-
+    <script src="https://kit.fontawesome.com/16bea15930.js" crossorigin="anonymous"></script>
     <script src="asset/script.js"></script>
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
