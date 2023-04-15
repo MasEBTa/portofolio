@@ -122,6 +122,9 @@ header {
   .cover-img-about {
     padding-top: 4rem;
   }
+  .img-about {
+    max-height: 20rem;
+  }
 }
 #about h3 {
     font-weight: 700;
