@@ -62,6 +62,27 @@ function luasBangunDatar() {
   $('.modal-title').text('Luas Bangun Datar');
   $('object').attr('data', 'bangun-datar-luas/index.html');
 }
+function pengelolaBuku() {
+  openModal();
+  $('.modal-title').text('Pengelola Buku');
+  $('object').attr('data', 'pengelola-buku/index.html');
+}
+function kalkulatorBMI() {
+  openModal();
+  $('.modal-title').text('Kalkulator BMI');
+  $('object').attr('data', 'bmi/index.html');
+}
+function crudMahasiswa() {
+  openModal();
+  $('.modal-title').text('Aplikasi MVC Sederhana');
+  $('object').attr('data', 'daftar-mahasiswa/index.html');
+}
+function blogLaravel() {
+  openModal();
+  $('.modal-title').text('Blog sederhana');
+  $('object').attr('data', 'blog-laravel/index.html');
+}
+// skills
 function frontendSkill() {
   openModal();
   $('.modal-title').text('Front End');
