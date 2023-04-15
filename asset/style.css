@@ -115,23 +115,76 @@ header {
   margin-inline-end: 0px;
   text-align: center;
 }
+.img-about {
+  max-height: 10rem;
+}
+@media screen and (max-width: 991px) {
+  .cover-img-about {
+    padding-top: 4rem;
+  }
+}
 #about h3 {
     font-weight: 700;
     font-size: 26px;
     color: #728394;
 }
-#about .skill {
-  font-weight: 500;
-  font-size: 18px;
-  color: #728394;
-}
-.skillset {
-  color: black;
-  text-decoration: none;
-}
 li button {
   border: none;
   background-color: white;
+}
+/* skills */
+#skills .section-title {
+  font-size: 20px;
+    font-weight: 500;
+    padding: 0;
+    /* line-height: 1px; */
+    margin: 0 0 20px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fdfcfc;
+    font-family: "Poppins", sans-serif;
+}
+#skills .section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #e5eee9;
+  margin: 4px 10px;
+}
+
+#skills {
+  background-color: #7a7d7c;
+  color: white;
+}
+div.scrollskill {
+  /* background-color: #333; */
+  width: 100%;
+  overflow: auto;
+  white-space: nowrap;
+  padding-right: 1rem;
+}
+#skills .content h3 {
+  font-size: 1.5rem;
+}
+div.scrollskill .skill {
+  display: inline-block;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  padding: 2rem;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+div.scrollskill .skill p {
+ font-size: 1rem;
+ display: none;
+}
+div.scrollskill .skill span {
+  font-size: 2rem;
+}
+div.scrollskill .skill:hover {
+  background-color: #777;
 }
 /* portofolio */
 .portofolio1 {
