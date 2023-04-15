@@ -21,7 +21,7 @@
     <header class="d-flex flex-wrap justify-content-center py-3 mb-0 border-bottom" id="header">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
         <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-        <span class="fs-4 text-white">Simple header</span>
+        <span class="fs-4 text-white">Simple Thinker</span>
       </a>
       <!-- navbar -->
       <ul class="nav nav-pills">
@@ -57,9 +57,9 @@
       <!-- body about -->
       <div class="row">
         <div class="col-lg-2 cover-img-about">
-          <img src="asset/img/me.jpg" class="img-fluid" alt="">
+          <img src="asset/img/me.jpg" class="img-fluid img-about" alt="">
         </div>
-        <div class="col-lg-10 img-about pt-4 pt-lg-0 content">
+        <div class="col-lg-10 pt-4 pt-lg-0 content">
           <h3>Web Developer</h3>
           <p>
             Saya cukup antusias dalam bidang pengembangan website dan aplikasi. Hal itu 
@@ -233,16 +233,16 @@
             </button>
           </div>
   
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <button class="icon-box">
               <div class="icon"><i class="bi bi-box-seam"></i></div>
               <h4>Rumus Bangun Ruang</h4>
               <p>Penghitung Luas Beberapa Bangun Ruang.</p>
             </button>
-          </div>
+          </div> -->
   
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-            <button class="icon-box">
+            <button class="icon-box" onclick="pengelolaBuku()">
               <div class="icon"><i class="bi bi-book"></i></div>
               <h4>CRUD Pengelola Buku</h4>
               <p>CRUD Sederhana Pengelolaan Buku, Pengaran, dan Penerbit</p>
@@ -250,19 +250,19 @@
           </div>
   
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <button class="icon-box">
+            <button class="icon-box" onclick="kalkulatorBMI()">
               <div class="icon"><i class="bi bi-file-spreadsheet"></i></div>
-              <h4>Kalkulator IBM</h4>
+              <h4>Kalkulator BMI</h4>
               <p>Kalkulator Sederhana Pengukur Kesehatan Badan Ideal berdasarkan sistim IBM.
               </p>
             </button>
           </div>
           
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <button class="icon-box">
+            <button class="icon-box" onclick="crudMahasiswa()">
               <div class="icon"><i class="bi bi-columns-gap"></i></div>
               <h4>CRUD Daftar Mahasiswa</h4>
-              <p>CRUD sederhana untuk data mahasiswa.</p>
+              <p>CRUD sederhana untuk data mahasiswa (MVC structure).</p>
             </button>
           </div>
   
@@ -282,7 +282,7 @@
   
         <div class="row project">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <button class="icon-box">
+            <button class="icon-box" onclick="blogLaravel()">
               <div class="icon"><i class="bi bi-columns-gap"></i></div>
               <h4>Blog Sederhana</h4>
               <p>Blog Sederhana Menggunakan Framework Laravel.</p>
