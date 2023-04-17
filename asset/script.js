@@ -85,6 +85,16 @@ function blogLaravel() {
   $('.modal-title').text('Blog sederhana');
   $('object').attr('data', 'blog-laravel/index.html');
 }
+function perpusLaravel(params) {
+  openModal();
+  $('.modal-title').text('Librarian App');
+  $('object').attr('data', 'perpus/index.html');
+}
+function cashere() {
+  openModal();
+  $('.modal-title').text('Cashere App');
+  $('object').attr('data', 'cashere/index.html');
+}
 // skills
 function frontendSkill() {
   openModal();
