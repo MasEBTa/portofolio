@@ -76,13 +76,19 @@
      <div class="container mb-5">
       <!-- pendahuluan -->
       <div class="section-title pt-3">
-        <h2>Skill</h2>
+        <h2>Skills</h2>
       </div>
       <!-- body skills -->
       <div class="row pb-4">
         <div class="col-lg-6">
-          <div class="pt-4 pt-lg-0 content" onclick="frontendSkill()">
-            <h3>Basic Front End</h3>
+          <div class="pt-4 pt-lg-0 content skillset" onclick="frontendSkill()">
+            <h3  
+              data-bs-toggle="tooltip"
+              data-bs-custom-class="custom-tooltip"
+              data-bs-title="Click Me" 
+              data-bs-placement="left"
+              style="display: inline-block;"
+            >Basic Front End</h3>
           </div>
           <div class="scrollskill">
             <div type="button" class="skill" onclick="htmlSkill()">
@@ -289,16 +295,16 @@
             </button>
           </div>
   
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <button class="icon-box">
+          <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <button class="icon-box"  onclick="perpusLaravel()">
               <div class="icon"><i class="bi bi-house-door"></i></div>
               <h4>Aplikasi Perpustakaan</h4>
               <p>Aplikasi Pengelolaan Buku Perpustakaan.</p>
             </button>
-          </div>
+          </div> -->
   
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-            <button class="icon-box">
+            <button class="icon-box" onclick="cashere()">
               <div class="icon"><i class="bi bi-minecart-loaded"></i></div>
               <h4>Aplikasi POS</h4>
               <p>Aplikasi Point Of Sales (aplikasi kasir) Dengan Laravel x Vue js</p>
@@ -348,12 +354,14 @@
         </table>
       </div>
     </div>
+    <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/16bea15930.js" crossorigin="anonymous"></script>
-    <script src="asset/script.js"></script>
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <!-- bootsrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!-- script -->
+    <script src="asset/script.js"></script>
   </body>
 </html>

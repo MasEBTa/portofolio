@@ -29,6 +29,9 @@ skill.forEach(element => {
   }));
 });
 // jquery code
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
 function openModal() {
   $('#modal').modal('toggle');
 }
@@ -81,6 +84,16 @@ function blogLaravel() {
   openModal();
   $('.modal-title').text('Blog sederhana');
   $('object').attr('data', 'blog-laravel/index.html');
+}
+function perpusLaravel(params) {
+  openModal();
+  $('.modal-title').text('Librarian App');
+  $('object').attr('data', 'perpus/index.html');
+}
+function cashere() {
+  openModal();
+  $('.modal-title').text('Cashere App');
+  $('object').attr('data', 'cashere/index.html');
 }
 // skills
 function frontendSkill() {
